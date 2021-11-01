@@ -3,11 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "dev-local": "cross-env NODE_ENV=development IP_ENV=local vue-cli-service serve",
+    "dev-test": "cross-env NODE_ENV=development IP_ENV=test vue-cli-service serve",
+    "dev": "cross-env NODE_ENV=development IP_ENV=prd vue-cli-service serve",
+    "build-local": "cross-env NODE_ENV=production IP_ENV=local vue-cli-service build",
+    "build-test": "cross-env NODE_ENV=production IP_ENV=test vue-cli-service build",
+    "build": "cross-env NODE_ENV=production IP_ENV=prd vue-cli-service build",
+    "add-page": "cross-env NODE_ENV=add node ./src/nodes/add.js ./src/router/Maps/map.ts"
   },
   "dependencies": {
+    "ant-design-vue": "^2.1.2",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.3",
+    "inquirer": "^8.0.0",
+    "publish-sftp": "^1.0.6",
+    "recast": "^0.20.4",
     "register-service-worker": "^1.7.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
@@ -21,8 +32,8 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
-    "node-sass": "^4.12.0",
-    "sass-loader": "^8.0.2",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^10.2.0",
     "typescript": "~4.1.5"
   },
   "browserslist": [
