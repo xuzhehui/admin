@@ -67,10 +67,10 @@ export default {
 
 <style lang='scss' >
 .navation-content{width:100%;height:auto;}
-/deep/.ant-menu-submenu-selected{color:rgb(171,58,59)}
-/deep/.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{background: rgba(171,58,59,.3);}
-/deep/.ant-menu-inline .ant-menu-item::after{border-right:3px solid rgb(171,58,59)}
-/deep/.ant-menu-item-selected{color:rgb(171,58,59)}
-/deep/.ant-menu-item:hover{color:rgb(171,58,59)}
-/deep/.ant-menu-submenu-title:hover{color:rgb(171,58,59)}
+::v-deep.ant-menu-submenu-selected{color:rgb(171,58,59)}
+::v-deep.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{background: rgba(171,58,59,.3);}
+::v-deep.ant-menu-inline .ant-menu-item::after{border-right:3px solid rgb(171,58,59)}
+::v-deep.ant-menu-item-selected{color:rgb(171,58,59)}
+::v-deep.ant-menu-item:hover{color:rgb(171,58,59)}
+::v-deep.ant-menu-submenu-title:hover{color:rgb(171,58,59)}
 </style>

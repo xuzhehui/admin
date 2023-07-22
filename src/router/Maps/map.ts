@@ -30,5 +30,5 @@ const result = [{
     path: "/cms/dqplatform/texttemplate",
     name: "TEXTTEMPLATE",
     component: async () => await require("@/views/DQPlatform/textTemplate.vue")
-}]
+},]
 export default result
